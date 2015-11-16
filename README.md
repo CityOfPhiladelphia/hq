@@ -17,4 +17,10 @@ Management machine for the city.
 - PHILAGOV_MEDIA_BUCKET=`name of media bucket`
 - PHILAGOV_MEDIA_SYNC_BUCKET=`name of media bucket to sync to`
 - PHILAGOV_DB_HOST=`hostname of phila.gov database`
+- PHILAGOV_DB_PASS=`password for phila.gov database`
 - PHILAGOV_DB_BUCKET=`name of bucket for database dumps`
+
+
+## Variables for Travis CI
+
+- IP=`IP address for management instance`
