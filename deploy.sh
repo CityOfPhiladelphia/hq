@@ -20,4 +20,5 @@ crontab - <<EOF
 
 # Use MYSQL_PWD instead of -p to avoid warning message
 20 4 * * * MYSQL_PWD=$PHILAGOV_DB_PASS mysqldump -C -h$PHILAGOV_DB_HOST -uwp wp | /usr/local/bin/aws s3 cp - s3://$PHILAGOV_DB_BUCKET/current.sql
+50 4 * * * /usr/local/bin/aws s3 cp s3://$PHILAGOV_DB_BUCKET/current.sql - | MYSQL_PWD=$PHILAGOV_DB_PASS mysql -h$PHILAGOV_STAGING_DB_HOST -uwp wp
 EOF

@@ -19,6 +19,7 @@ Management machine for the city.
 - PHILAGOV_DB_HOST=`hostname of phila.gov database`
 - PHILAGOV_DB_PASS=`password for phila.gov database`
 - PHILAGOV_DB_BUCKET=`name of bucket for database dumps`
+- PHILAGOV_STAGING_DB_HOST=`hostname of phila.gov staging database`
 
 
 ## Variables for Travis CI
