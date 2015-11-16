@@ -1,0 +1,4 @@
+sudo: false
+language: generic
+before_script: .travis/prep.sh
+script: deploy.sh
