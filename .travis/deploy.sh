@@ -24,9 +24,9 @@ region = us-east-1
 EOF
 
 echo 'Retrieving instance ID from AWS'
-export INSTANCE_ID=$(aws ec2 describe-instances --filters
-  "Name=tag:Branch,Values=$TRAVIS_BRANCH"
-  "Name=tag:Project,Values=hq"
+export INSTANCE_ID=$(aws ec2 describe-instances --filters \
+  "Name=tag:Branch,Values=$TRAVIS_BRANCH" \
+  "Name=tag:Project,Values=hq" \
   --query "Reservations[0].Instances[0].InstanceId" | tr -d '"')
 if [ ! "$INSTANCE_ID" ]; then
   echo "No machine found for branch \"$TRAVIS_BRANCH\". Skipping deploy" 
