@@ -39,5 +39,5 @@ chmod 400 ~/.ssh/philagov2.pem
 export KEY_PAIR=philagov2
 
 joia host
-joia push > /dev/null
+joia push
 joia deploy
