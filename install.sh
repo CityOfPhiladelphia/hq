@@ -2,7 +2,7 @@
 
 export DEBIAN_FRONTEND=noninteractive
 sudo apt-get update
-sudo -E apt-get install -y mysql-client-5.6 unzip
+sudo -E apt-get install -y jq mysql-client-5.6 unzip
 
 echo 'Installing AWS CLI'
 cd /tmp
