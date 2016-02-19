@@ -4,7 +4,7 @@ set -e
 
 echo 'Setting crontab'
 crontab - <<EOF
-PATH=$HOME/app:$PATH
+PATH=$HOME/app/scripts:$PATH
 
 20 3 * * * /usr/local/bin/aws s3 sync s3://$PHILA_MEDIA_BUCKET s3://$PHILA_MEDIA_SYNC_BUCKET
 

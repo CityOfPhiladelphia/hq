@@ -1,9 +1,9 @@
 # joia config
 
 joia_install () {
-  joia_ssh "./install.sh"
+  joia_ssh "scripts/install.sh"
 }
 
 joia_deploy () {
-  joia_ssh "./deploy.sh"
+  joia_ssh "scripts/deploy.sh"
 }
