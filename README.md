@@ -3,13 +3,6 @@
 Management machine for the city.
 
 
-## Variables for EC2 setup
-
-- KEYNAME=`ssh key name`
-- AMI=`ami id`
-- SUBNET=`subnet id`
-
-
 ## Variables for .ssh/environment
 
 - AWS_ID=`access key ID for aws-cli`
