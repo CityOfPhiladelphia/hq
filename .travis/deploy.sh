@@ -11,7 +11,7 @@ export PATH=~/bin:$PATH
 cd -
 
 echo 'Install Joia'
-curl https://raw.githubusercontent.com/CityOfPhiladelphia/joia/f32ca67f95c1cb22763cd05be2a0e6615d017bda/joia > ~/bin/joia
+curl https://raw.githubusercontent.com/CityOfPhiladelphia/joia/ff78510af0d554372b872ab458af4d2b87886663/joia > ~/bin/joia
 chmod 755 ~/bin/joia
 
 echo 'Configuring AWS CLI'
