@@ -36,7 +36,7 @@ fi
 echo 'Setting up SSH access'
 openssl aes-256-cbc -K $encrypted_e99dd148f934_key -iv $encrypted_e99dd148f934_iv -in .travis/philagov2.pem.enc -out ~/.ssh/philagov2.pem -d
 chmod 400 ~/.ssh/philagov2.pem
-export KEY_PAIR=philagov2
+export KEYPAIR=philagov2
 
 joia host
 joia push
