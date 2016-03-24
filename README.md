@@ -3,17 +3,11 @@
 Management machine for the city.
 
 
-## Variables for .ssh/environment
+## Deploying an instance
 
-- AWS_ID=`access key ID for aws-cli`
-- AWS_SECRET=`secret access key for aws-cli`
-- PHILA_MEDIA_BUCKET=`name of media bucket`
-- PHILA_MEDIA_SYNC_BUCKET=`name of media bucket to sync to`
-- PHILA_DB_HOST=`hostname of phila.gov database`
-- PHILA_DB_PASS=`password for phila.gov database`
-- PHILA_DB_BUCKET=`name of bucket for database dumps`
-- PHILA_STAGING_DB_HOST=`hostname of phila.gov staging database`
-
+1. [Install joia](https://github.com/CityOfPhiladelphia/joia#install)
+2. Copy `.env.prod` from S3 to `.env` in this repo
+3. Run `joia up`
 
 ## Variables for Travis CI
 
